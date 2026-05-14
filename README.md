@@ -1,40 +1,40 @@
 # Food Delivery Demand Pulse
 
-Operational analytics case study analyzing surge pricing inefficiencies in a regional food delivery platform.
+Operational analytics case study analyzing surge pricing inefficiencies and delivery optimization opportunities in a regional food delivery platform.
 
-The project investigates whether surge incentives are actually improving delivery speed — or reacting too late after rider queues have already formed.
+---
+
+## GitHub Repository
+
+https://github.com/tbm26yashjain-hue/food-delivery-demand-pulse
 
 ---
 
 ## Problem Statement
 
-The food delivery platform was:
+The platform was:
 - overpaying surge incentives
-- applying surge during non-peak periods
+- activating surge during low-demand windows
 - and still experiencing slower deliveries
 
-Analysis across 50,000 orders showed that:
-- surge orders arrived 3.7 minutes slower than non-surge orders
-- 12.7% of surge activations happened outside peak demand windows
-- weekend surge behavior differed significantly from weekdays
-
 The objective was to identify:
-- operational inefficiencies
-- demand timing patterns
-- and opportunities for proactive rider positioning.
+- demand timing inefficiencies
+- operational bottlenecks
+- and proactive rider positioning opportunities.
 
 ---
 
 ## Key Findings
 
 ### Surge Misfires
-12.7% of surge orders occurred outside true peak hours.
+12.7% of surge activations occurred outside peak demand windows.
 
 ### Slower Delivery Despite Surge
 Surge orders averaged:
-- 43.2 minutes delivery time
-vs
-- 39.5 minutes for non-surge orders
+- 43.2 minutes
+
+Non-surge orders averaged:
+- 39.5 minutes
 
 ### Weekend Demand Gap
 Weekend surge rate:
@@ -43,40 +43,25 @@ Weekend surge rate:
 Weekday surge rate:
 - 20.5%
 
-No separate weekend policy existed.
-
 ### Demand Concentration
 Nearly half of all daily orders occurred during:
 - lunch peak
 - dinner peak
-
-The strongest queue buildup started at 6 PM before surge activation fully ramped.
 
 ---
 
 ## Recommendations
 
 ### Tighten Surge Windows
-Restrict surge activation to:
+Restrict surge to:
 - 12 PM – 2 PM
 - 7 PM – 10 PM
 
-Expected:
-- lower rider incentive waste
-- no delivery impact
-
 ### Weekend Pre-Position Bonus
-Test rider pre-positioning before demand spikes.
-
-Expected:
-- 2–4 minute delivery improvement
+Test proactive rider positioning before demand spikes.
 
 ### Kolkata Pilot
-Pilot proactive rider positioning in Kolkata due to highest demand concentration.
-
-Expected:
-- improved rider availability
-- lower reactive surge dependency
+Pilot operational optimization in highest demand cluster.
 
 ---
 
@@ -86,11 +71,10 @@ Expected:
 |---|---|
 | Analysis | Python |
 | Data Processing | Pandas |
-| Statistical Testing | scipy.stats |
-| Visualization | Matplotlib |
+| Statistics | scipy.stats |
 | Forecasting | Rolling Mean |
+| Visualization | Matplotlib |
 | Notebook | Jupyter |
-| Presentation | PptxGenJS |
 
 ---
 
@@ -99,9 +83,8 @@ Expected:
 ```text
 food-delivery-demand-pulse/
 │
-├── case3_food_delivery.ipynb
-├── delhi_7day_forecast_output.csv
-├── Execuitve Summary.docx
-├── food_delivery_5slide_evaluator.pptx
+├── food_delivery_analysis.ipynb
+├── delhi_7day_forecast.csv
+├── evaluator_deck.pdf
 ├── README.md
 └── DECISIONS.md
